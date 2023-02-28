@@ -1,5 +1,5 @@
 # Predicción de alquileres de bicicletas
-Este repositorio contiene un script de Python llamado ```rentals.py``` que utiliza PySpark para realizar una regresión lineal sobre un conjunto de datos de alquileres de bicicletas. El conjunto de datos se almacena en un archivo CSV llamado bike_rentals.csv.
+Este repositorio contiene un script de Python llamado ```rentals.py``` que utiliza PySpark para realizar una regresión lineal sobre un conjunto de datos de alquileres de bicicletas. El conjunto de datos se almacena en un archivo CSV llamado ```bike_rentals.csv```.
 
 ## Instalación
 Para ejecutar el script, deberá tener acceso a un clúster de Spark. Si no tiene un clúster, puede configurar uno en un proveedor de nube como AWS, GCP o Azure. Alternativamente, puede ejecutar Spark en su máquina local en modo independiente.
@@ -17,7 +17,7 @@ Tenga en cuenta que es posible que deba modificar el comando ```spark-submit``` 
 ## Conjunto de datos
 El archivo ```bike_rentals.csv``` contiene datos sobre el alquiler de bicicletas durante un período de 24 horas. Las columnas en el conjunto de datos son:
 
-hour: la hora del día (0-23)
-temperature: la temperatura en grados Celsius
-visitors: el número de visitantes a la tienda de alquiler de bicicletas durante la hora
-rentals: el número de alquileres de bicicletas durante la hora
+* hour: la hora del día (0-23)
+* temperature: la temperatura en grados Celsius
+* visitors: el número de visitantes a la tienda de alquiler de bicicletas durante la hora
+* rentals: el número de alquileres de bicicletas durante la hora
