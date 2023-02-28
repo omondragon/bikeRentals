@@ -10,6 +10,7 @@ Una vez que tenga acceso a un clúster, deberá instalar PySpark en su máquina 
 Para utilizar el script, deberá enviarlo al clúster de Spark utilizando el comando ```spark-submit```. Aquí hay un ejemplo de comando que puede ejecutar en su terminal:
 
 ```spark-submit rentals.py```
+
 Este comando enviará el script ```rentals.py``` al clúster de Spark para su ejecución. El script cargará los datos del archivo ```bike_rentals.csv```, los dividirá en un conjunto de entrenamiento y un conjunto de prueba, y entrenará un modelo de regresión lineal en el conjunto de entrenamiento. Luego usará el modelo entrenado para hacer predicciones sobre el conjunto de prueba y mostrará los alquileres de bicicletas predichos junto con los alquileres reales.
 
 Tenga en cuenta que es posible que deba modificar el comando ```spark-submit``` según la configuración específica de su clúster.
