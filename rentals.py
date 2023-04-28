@@ -15,7 +15,7 @@ schema = StructType([
 ])
 
 # Cargar los datos de entrenamiento
-data = spark.read.format("csv").option("header", "true").schema(schema).load("/home/vagrant/labSpark/app/bike_rentals.csv")
+data = spark.read.format("csv").option("header", "true").schema(schema).load("/home/vagrant/labSpark/bikeRentals/bike_rentals.csv")
 
 # Convertir las características a un vector denso
 assembler = VectorAssembler(inputCols=["hour", "temperature", "visitors"], outputCol="features")
